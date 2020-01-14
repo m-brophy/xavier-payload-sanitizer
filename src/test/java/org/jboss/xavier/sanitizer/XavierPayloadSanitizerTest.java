@@ -24,7 +24,7 @@ public class XavierPayloadSanitizerTest {
         // This does not work
         final List<String> inputFileNames = Arrays.asList("vm_with_null_host.json", "vm_without_host.json", "vm_with_empty_host.json");
 
-        
+
         final String issuesFileName = "issues_conditions.json";
         URL issuesURL = Thread.currentThread().getContextClassLoader().getResource(issuesFileName);
         Assert.assertNotNull(issuesFileName + " not found", issuesURL);
